@@ -5,7 +5,7 @@ import styles from '../scss/DayList.module.scss';
 function DayList() {
   const days = useFetch('http://localhost:3001/days');
   if(days.length === 0 ) {
-    return <span>Loading...</span>
+    return <span className='loading'>Loading...</span>
   }
   // const [days, setDays] = useState([]);
 

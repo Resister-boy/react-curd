@@ -47,20 +47,20 @@ function Word(props) {
 
   return (
     <tr className={isDone ? "off" : ""}>
-    <td>
-      <input type="checkbox" checked={isDone} onChange={toggleDone} />
-    </td>
-    <td>
-      {word.eng}
-    </td>
-    <td>
-      {isShow && word.kor}
-    </td>
-    <td>              
-      <button onClick={toggleShow} className="btn_hide">{isShow ? "Hide" : "Show"}</button>
-      <button onClick={deleteWord} className="btn_del">Delete</button>
-    </td>
-  </tr>
+      <td>
+        <input type="checkbox" checked={isDone} onChange={toggleDone} />
+      </td>
+      <td>
+        {word.eng}
+      </td>
+      <td>
+        {isShow && word.kor}
+      </td>
+      <td>              
+        <button onClick={toggleShow} className="btn_hide">{isShow ? "Hide" : "Show"}</button>
+        <button onClick={deleteWord} className="btn_del">Delete</button>
+      </td>
+    </tr>
   );
 }
 
